@@ -6,3 +6,5 @@ jobs:
     steps: 
       - name: test2
         run: echo " hello"   
+      - name: print sys information
+        run: date 
