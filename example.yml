@@ -1,0 +1,11 @@
+name: example
+on: workflow dispatch
+jobs: 
+  name: example
+  runs-on: windows:latest
+  steps: 
+    run: |
+      whoami
+      df -h
+      pwd
+      
