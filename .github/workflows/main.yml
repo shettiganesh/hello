@@ -8,3 +8,10 @@ jobs:
         run: echo " hello"   
       - name: print sys information
         run: date 
+      - name: system details
+      - run: uname -a
+      - run: free -h
+      - run: du -hT
+      
+      
+  
