@@ -4,9 +4,10 @@ jobs:
   job:
     runs-on: ubuntu-latest
     steps: 
-      - run: echo " hello"   
-      - run: date 
-      - run: uname -a
-      - run: free -h
-      - run: du -h    
+      - run: |
+         echo " hello"   
+         date 
+         uname -a
+         free -h
+         du -h    
   
