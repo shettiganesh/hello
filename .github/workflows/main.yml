@@ -4,14 +4,9 @@ jobs:
   job:
     runs-on: ubuntu-latest
     steps: 
-      - name: test2
-        run: echo " hello"   
-      - name: print sys information
-        run: date 
-      - name: system details
+      - run: echo " hello"   
+      - run: date 
       - run: uname -a
       - run: free -h
-      - run: du -hT
-      
-      
+      - run: du -hT      
   
