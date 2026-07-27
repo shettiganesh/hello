@@ -8,5 +8,5 @@ jobs:
       - run: date 
       - run: uname -a
       - run: free -h
-      - run: du -hT      
+      - run: du -h    
   
