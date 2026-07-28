@@ -1,0 +1,17 @@
+name: test-inputs
+on: 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Select Environment"
+        required: true
+        default: dev
+jobs:
+ test-inputs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: deploy the application
+      run: echo " deploying app into ${{ inputs.environment}}"
+
+          
+  
