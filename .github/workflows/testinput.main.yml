@@ -1,0 +1,13 @@
+name: test-inputs
+on:
+ push
+jobs:
+  test-inputs:
+   runs-on: ubuntu-latest
+   steps:
+     - name: using context variables
+       run: |
+        echo "this workflow triggered by ${{ github.actor}}"
+        echo " repo name is ${{github.repository}}"
+     - name: print all variables in github
+       run: echo "${{ toJson(github) }}"
