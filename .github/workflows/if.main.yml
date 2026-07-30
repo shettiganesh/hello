@@ -8,9 +8,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: run if main branch push
-        if: github.ref =='refs/heads/main'
-        run: echo "this is main"
+      - name: run if test branch push
+        if: github.ref_name =='test'
+        run: echo "this is test"
       - name: run this step
         run: echo "this is manual"
      
