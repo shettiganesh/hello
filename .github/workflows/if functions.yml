@@ -1,0 +1,17 @@
+name: if-with-functions
+on: 
+  push:
+    branches: 
+    - main
+    - dev
+    - feature
+jobs:
+  quality_check:
+    if: startsWith(github.ref_name,'feature') && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: perform code quality
+        run: echo "performing quality checks on code"
+     dev_deploy:
+    if:  github.ref_name =='develop' && github.event_name == 'push'
+    runs-on: ubuntu-latest
