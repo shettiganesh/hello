@@ -3,7 +3,7 @@ on:
   push:
     branches: 
     - main
-    - develop
+    - dev
     - feature
 jobs:
   quality_check:
@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: perform code quality
         run: echo "performing quality checks on code"
-
-    
-    
+    dev-deploy:
+        if: github.ref_name == 'dev' && github.event_name == 'push'
+        runs-on: ubuntu-latest
