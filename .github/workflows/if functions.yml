@@ -16,3 +16,6 @@ jobs:
   devk_deploy:
     if:  github.ref_name =='dev' && github.event_name == 'push'
     runs-on: ubuntu-latest
+    steps:
+      - name: perform code dev
+        run: echo "performing dev checks on code"
