@@ -4,7 +4,7 @@ on:
     branches: 
     - main
     - develop
-    - feature/**
+    - feature
 jobs:
   quality_check:
     if: startsWith(github.ref_name,'feature') && github.event_name == 'push'
