@@ -13,6 +13,6 @@ jobs:
       - name: perform code quality
         run: echo "performing quality checks on code"
         
-  dev_deploy:
+  devk_deploy:
     if:  github.ref_name =='dev' && github.event_name == 'push'
     runs-on: ubuntu-latest
