@@ -3,4 +3,8 @@ on:
     push
 jobs:   
  call_new:
+<<<<<<< HEAD
     uses: shettiganesh/reusable/.github/workflows/reusable.yaml@main
+=======
+    uses: shettiganesh/actions/.github/workflows/reusable.yaml@main
+>>>>>>> 3cb845d45c9d9956de4060c03fb8e4a2f2d7aedd
