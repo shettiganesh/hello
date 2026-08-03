@@ -1,0 +1,6 @@
+name: callme
+on:
+    push
+jobs:   
+ call_new:
+    uses: shettiganesh/hello/.github/workflows/reusable.yaml@main
