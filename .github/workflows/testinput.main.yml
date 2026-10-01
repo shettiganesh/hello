@@ -1,6 +1,6 @@
 name: test-inputs
 on:
- push
+ workflow_dispatch: 
 jobs:
   test-inputs:
    runs-on: ubuntu-latest
