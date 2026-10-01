@@ -1,7 +1,7 @@
 name: test-inputs
 on: 
   workflow_dispatch:
-    inputs:
+   inputs:
       environment:
         description: "Select Environment"
         required: true
